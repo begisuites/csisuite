@@ -1,0 +1,213 @@
+QMainWindow {
+    background-color: #444;
+}
+
+QSplitter::handle {
+    background-color: #444;
+    width: 2px;
+    height: 2px;
+}
+
+#Sidebar  {
+    padding: 5px;
+    background-color: #2b2b2b;
+    color: white;
+    border-right: 1px solid #444;
+}
+
+#Sidebar QLabel {
+    color: lightgray;
+    font-weight: bold;
+    padding: 8px;
+    font-size: 11px;
+}
+
+#IconToolbar { 
+    background: #3b3b3b; 
+    border: 0px;
+}
+
+#IconToolbar * {
+    padding: 10px 4px 10px 10px;
+}
+
+QTreeView {
+    background: #2b2b2b;
+    color: #d4d4d4;
+    font-size: 12px;
+    border: none;
+}
+
+QTreeView::item:selected {
+    background: #094771;
+}
+
+QToolBar {
+    background-color: #2b2b2b;
+    border-bottom: 1px solid #1c1c1c;
+    spacing: 0px;
+    padding: 0px;
+}
+
+QToolBar::separator {
+    background-color: #3e3e42;
+    width: 1px;
+    margin: 4px 2px;
+}
+
+QToolButton {
+    background-color: transparent;
+    border: none;
+    padding: 8px;
+    margin-right: 4px;
+    color: #ddd;
+}
+
+QToolButton:hover {
+    background-color: #3e3e42;
+}
+
+QToolButton[sidebarButton="true"] {
+    border: none;
+    border-right: 3px solid transparent;
+    margin-right: 0px;
+}
+
+QToolButton[sidebarButton="true"]:checked {
+    border-left: 3px solid #686de0;
+    border-right: 3px solid transparent;
+}
+
+QToolButton::menu-indicator {
+    image: none;
+}
+
+QToolBar QLabel {
+    color: #ddd;
+    font-size: 14px;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+QToolBar QCheckBox {
+    color: #ddd;
+    font-size: 13px;
+    margin-left: 8px;
+}
+
+QComboBox {
+    background-color: #3b3b3b;
+    color: #ddd;
+    padding: 4px 8px;
+    font-size: 13px;
+    margin: 0 3px;
+    min-width: 120px;
+}
+
+QToolTip {
+    color: #d4d4d4;                  /* text */
+    background-color: #1e1e1e;       /* panel background */
+    border: 1px solid #3c3c3c;       /* subtle outline */
+    border-radius: 4px;
+    padding: 6px 8px;
+    font-family: "Segoe UI", "SF Pro Text", "Ubuntu", "DejaVu Sans", Arial, sans-serif;
+    font-size: 9pt;
+}
+/* Push Button (normal state */
+QPushButton[variant="primary"], QPushButton[variant="danger"] {
+    border-radius: 4px;
+    padding: 3px 8px;
+    color: #e8e8e8;
+    background: rgba(141,132,255,0.18);
+    border: 1px solid rgba(141,132,255,0.55);
+}
+QPushButton[variant="primary"]:hover {
+    background: rgba(141,132,255,0.28);
+    border-color: rgba(141,132,255,0.80);
+}
+QPushButton[variant="primary"]:pressed {
+    background: rgba(141,132,255,0.38);
+}
+/* Danger button */
+QPushButton[variant="danger"] {
+    background: rgba(220, 75, 75, 0.22);
+    border: 1px solid rgba(220, 75, 75, 0.70);
+}
+QPushButton[variant="danger"]:hover {
+    background: rgba(220, 75, 75, 0.32);
+    border-color: rgba(220, 75, 75, 0.90);
+}
+QPushButton[variant="danger"]:pressed {
+    background: rgba(220, 75, 75, 0.42);
+}
+/* Disabled state */
+QPushButton:disabled {
+    color: #7a7a7a;
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.12);
+}
+QWidget[variant="invisible"] {
+    padding: 3px 8px;
+    background: transparent; 
+    border: 1px solid transparent; 
+    color: transparent
+}
+
+/**** QSpinBox, QDoubleSpinBox ****/
+#Sidebar QSpinBox, QDoubleSpinBox {
+    background: #1f1f1f;
+    color: #d4d4d4;
+    border: 1px solid #3c3c3c;
+    border-radius: 6px;
+    padding: 2px 26px 2px 8px;
+    selection-background-color: #264f78;
+    selection-color: #ffffff;
+}
+
+#Sidebar QDoubleSpinBox::up-button, #Sidebar QDoubleSpinBox::down-button,
+#Sidebar QSpinBox::up-button, #Sidebar QSpinBox::down-button {
+    width: 20px;
+    height: 8px;
+    padding: 3px 3px 3px 0px;
+    border: none;
+    border-left: 1px solid #3c3c3c;
+}
+
+#Sidebar QDoubleSpinBox::up-arrow, #Sidebar QDoubleSpinBox::down-arrow,
+#Sidebar QSpinBox::up-arrow, #Sidebar QSpinBox::down-arrow {
+    height: 10px;
+}
+
+
+#Sidebar QDoubleSpinBox::up-arrow, #Sidebar QSpinBox::up-arrow {
+    image: url("ui/icons/angle-up.svg");
+}
+
+#Sidebar QDoubleSpinBox::down-arrow, #Sidebar QSpinBox::down-arrow {
+    image: url("ui/icons/angle-down.svg");
+}
+
+#Sidebar QSpinBox:hover, #Sidebar QDoubleSpinBox:hover {
+    border-color: #5a5a5a;
+}
+
+#Sidebar QSpinBox:focus, #Sidebar QDoubleSpinBox:focus {
+    border: 1px solid rgba(141,132,255,0.55);
+    outline: none;
+}
+
+#Sidebar QSpinBox:disabled, #Sidebar QDoubleSpinBox:disabled {
+    background: #2b2b2b;
+    color: #7a7a7a;
+    border-color: #2b2b2b;
+}
+
+#Sidebar QSpinBox::up-button:hover, #Sidebar QDoubleSpinBox::up-button:hover,
+#Sidebar QSpinBox::down-button:hover, #Sidebar QDoubleSpinBox::down-button:hover {
+    background: #2a2a2a;
+}
+
+#Sidebar QSpinBox::up-button:pressed, #Sidebar QDoubleSpinBox::up-button:pressed,
+#Sidebar QSpinBox::down-button:pressed, #Sidebar QDoubleSpinBox::down-button:pressed {
+    background: #333333;
+}

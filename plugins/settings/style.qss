@@ -1,0 +1,32 @@
+#ConfigsScrollArea {
+    background-color: #2b2b2b;
+}
+#ConfigsScrollArea QWidget QLabel {
+    font-size: 12px;
+    padding-right: 5px;
+}
+#ConfigsScrollArea QWidget[class="config-item"]:hover {
+    background-color: #2a2d2e;
+    border: 1px solid #464647;
+}
+#Filters QScrollArea {
+    border: none;
+}
+#Filters QCheckBox {
+    color: #ddd;
+}
+#Filters QScrollBar:vertical {
+    background-color: #1e1e1e;
+    width: 12px;
+}
+#Filters QScrollBar::handle:vertical {
+    background-color: #424242;
+    border-radius: 6px;
+    min-height: 20px;
+}
+#Filters QScrollBar::handle:vertical:hover {
+    background-color: #4f4f4f;
+}
+#ConfigsScrollArea QPushButton {
+    width: 42px;
+}

@@ -1,0 +1,11 @@
+data/
+temp/
+**/__pycache__/
+.DS_Store
+venv/
+readers/nexmon/build
+readers/nexmon/*.c
+readers/nexmon/*.so
+wandb/
+*.pth
+*.joblib
